@@ -3,6 +3,7 @@ const btnContainer = document.querySelector(".toggle-btn-container");
 const navLinks = document.querySelector(".nav-links");
 const bodyFrame = document.querySelector("body");
 const navLinksOpened = document.querySelector(".nav-open");
+const overlay = document.querySelector(".overlay-div");
 
 window.addEventListener("resize", () => {
   navLinks.classList.remove("transform-animation");
@@ -12,11 +13,11 @@ btnContainer.addEventListener("click", () => {
   navLinks.classList.add("transform-animation");
   navLinks.classList.toggle("nav-open");
   toggleBtn.classList.toggle("close-btn");
+  overlay.classList.toggle("overlay");
 });
 
-// navLinks.addEventListener("click"),
-//   (e) => {
-//     if (e.target !== navLinks && e.target !== toggleBtn) {
-//       navLinksOpened.classList.remove("nav-open");
-//     }
-//   };
+overlay.addEventListener("click", (e) => {
+  navLinks.classList.remove("nav-open");
+  overlay.classList.remove("overlay");
+  toggleBtn.classList.toggle("close-btn");
+});
