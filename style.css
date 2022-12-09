@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   background-color: hsl(36, 100%, 99%);
   font-family: "Inter", sans-serif;
@@ -279,7 +283,7 @@ h6 {
 
   main {
     width: 100%;
-    position: relative;
+    /* position: relative; */
   }
 
   .navbar {
@@ -288,4 +292,11 @@ h6 {
 }
 
 @media (max-width: 500px) {
+  .articles-grid {
+    display: block;
+    /* gap: 2.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 85%; */
+    padding: 4rem 0 4rem 0;
+  }
 }
