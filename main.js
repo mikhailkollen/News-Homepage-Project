@@ -7,9 +7,12 @@ const overlay = document.querySelector(".overlay-div");
 
 window.addEventListener("resize", () => {
   navLinks.classList.remove("transform-animation");
+  navLinks.classList.remove("nav-open");
+  overlay.classList.remove("overlay");
+  toggleBtn.classList.remove("close-btn");
 });
 
-btnContainer.addEventListener("click", () => {
+toggleBtn.addEventListener("click", () => {
   navLinks.classList.add("transform-animation");
   navLinks.classList.toggle("nav-open");
   toggleBtn.classList.toggle("close-btn");
