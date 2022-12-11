@@ -156,9 +156,9 @@ h4:hover {
   border: none;
   cursor: pointer;
   position: absolute;
-  min-height: 36px;
-  min-width: 2em;
-  max-height: 60px;
+  height: 36px;
+  width: 2em;
+  /* max-height: 46px; */
   padding: 0;
   /* padding: 20px; */
   background-color: hsl(36, 100%, 99%);
@@ -389,21 +389,8 @@ h6:hover {
     /* left: 5%; */
   }
 
-  /* .toggle-btn {
-    right: 5%;
-  } */
-
-  .toggle-btn-container {
-    position: relative;
-    padding: 20px;
-    padding-right: 0;
-    z-index: 2;
-    /* right: 50%; */
-    border-radius: 50%;
-  }
-
   .toggle-btn {
-    top: 48%;
+    top: 40%;
     position: absolute;
     padding-right: 0;
   }
@@ -435,10 +422,6 @@ h6:hover {
 
     padding: 4rem 0 4rem 0;
   }
-
-  /* .news-block-container {
-    width: 90%;
-  } */
 }
 
 @media (max-width: 500px) {
