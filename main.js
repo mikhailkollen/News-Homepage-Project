@@ -5,6 +5,7 @@ const bodyFrame = document.querySelector("body");
 const navLinksOpened = document.querySelector(".nav-open");
 const overlay = document.querySelector(".overlay-div");
 
+// To Close the Burger Menu when the window is resized
 window.addEventListener("resize", () => {
   navLinks.classList.remove("transform-animation");
   navLinks.classList.remove("nav-open");
@@ -12,6 +13,7 @@ window.addEventListener("resize", () => {
   toggleBtn.classList.remove("close-btn");
 });
 
+// To Close/Open the Burger Menu
 toggleBtn.addEventListener("click", () => {
   navLinks.classList.add("transform-animation");
   navLinks.classList.toggle("nav-open");
@@ -19,6 +21,7 @@ toggleBtn.addEventListener("click", () => {
   overlay.classList.toggle("overlay");
 });
 
+// To Close the Burger Menu when clicked outside
 overlay.addEventListener("click", (e) => {
   navLinks.classList.remove("nav-open");
   overlay.classList.remove("overlay");

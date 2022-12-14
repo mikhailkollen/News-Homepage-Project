@@ -1,12 +1,7 @@
-/* html {
-  width: 100%;
-} */
-
 html,
 body {
   background-color: hsl(36, 100%, 99%);
   font-family: "Inter", sans-serif;
-  width: 100%;
 }
 
 p {
@@ -15,6 +10,7 @@ p {
   font-size: 1rem;
 }
 
+/* HEADER, NAVBAR AND BURGER MENU*/
 header {
   display: flex;
   justify-content: center;
@@ -49,6 +45,71 @@ header {
 .navbar ul li a:hover {
   color: hsl(5, 85%, 63%);
 }
+
+.toggle-btn {
+  display: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  height: 36px;
+  width: 2em;
+  padding: 0;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.hamburger {
+  display: block;
+  position: absolute;
+  background-color: black;
+  transition: transform 250ms ease-in-out;
+  width: 2em;
+  height: 3px;
+}
+
+.bar-2 {
+  top: 6px;
+}
+
+.bar-3 {
+  top: 12px;
+}
+
+.close-btn .bar-1 {
+  rotate: 45deg;
+  top: 12px;
+}
+
+.close-btn .bar-3 {
+  rotate: -45deg;
+  top: 12px;
+}
+
+.close-btn .bar-2 {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+.bar-1,
+.bar-3 {
+  transition: rotate 250ms ease-in-out;
+}
+
+.overlay-div {
+  transition: all 300ms ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 26, 0.485);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+/* MAIN CONTENT */
 
 h1 {
   font-weight: 800;
@@ -151,58 +212,6 @@ h4:hover {
   background-color: hsl(240, 100%, 5%);
 }
 
-.toggle-btn {
-  display: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  height: 36px;
-  width: 2em;
-  /* max-height: 46px; */
-  padding: 0;
-  /* padding: 20px; */
-  background-color: hsl(36, 100%, 99%);
-}
-
-.hamburger {
-  display: block;
-  position: absolute;
-  background-color: black;
-  transition: transform 250ms ease-in-out;
-  width: 2em;
-  height: 3px;
-}
-
-.bar-2 {
-  top: 6px;
-}
-
-.bar-3 {
-  top: 12px;
-}
-
-.close-btn .bar-1 {
-  rotate: 45deg;
-  top: 12px;
-  /* top: 12px; */
-}
-
-.close-btn .bar-3 {
-  rotate: -45deg;
-  top: 12px;
-  /* top: 12px; */
-}
-
-.close-btn .bar-2 {
-  opacity: 0;
-  transition: opacity 250ms ease-in-out;
-}
-
-.bar-1,
-.bar-3 {
-  transition: rotate 250ms ease-in-out;
-}
-
 .articles-grid {
   display: grid;
   gap: 2.2rem;
@@ -249,6 +258,8 @@ h6:hover {
   max-height: 180px;
   max-width: 120px;
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 900px) {
   .nav-links {
@@ -319,61 +330,7 @@ h6:hover {
   .navbar {
     width: 90%;
   }
-}
 
-/* @keyframes dark-overlay {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 0.03;
-  }
-  25% {
-    opacity: 0.07;
-  }
-  35% {
-    opacity: 0.1;
-  }
-  45% {
-    opacity: 0.17;
-  }
-  65% {
-    opacity: 0.2;
-  }
-  75% {
-    opacity: 0.25;
-  }
-  85% {
-    opacity: 0.27;
-  }
-  95% {
-    opacity: 0.29;
-  }
-  100% {
-    opacity: 0.3;
-  }
-} */
-
-.overlay-div {
-  transition: all 300ms ease-in-out;
-}
-
-.overlay {
-  position: fixed;
-  background-color: rgba(0, 0, 26, 0.485);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  opacity: 0.3;
-  animation-name: dark-overlay;
-  animation-duration: 0.7s;
-
-  /* transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1); */
-}
-
-@media (max-width: 900px) {
   main {
     display: flex;
     flex-direction: column;
@@ -386,7 +343,6 @@ h6:hover {
 
   .navbar img {
     position: relative;
-    /* left: 5%; */
   }
 
   .toggle-btn {
@@ -426,7 +382,7 @@ h6:hover {
 
 @media (max-width: 500px) {
   .hero-image-container img {
-    content: url(./assets/images/image-web-3-mobile.jpg);
+    content: url(./images/image-web-3-mobile.jpg);
   }
 
   .articles-grid {
