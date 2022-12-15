@@ -44,6 +44,7 @@ header {
 
 .navbar ul li a:hover {
   color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
 
 .toggle-btn {
@@ -184,6 +185,7 @@ h3 {
 
 h3:hover {
   color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 
 .news-block p {
@@ -210,6 +212,7 @@ h3:hover {
 
 .read-more-btn:hover {
   background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
 }
 
 .articles-grid {
@@ -248,6 +251,7 @@ h5 {
 
 h5:hover {
   color: hsl(5, 85%, 63%);
+  cursor: pointer;
 }
 
 .article-text p {
