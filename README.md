@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mikhailkollen/News-Homepage-Project)
-- Live Site URL: [Add live site URL here](https://mikhailkollen.github.io/News-Homepage-Project/)
+- [The repository URL:](https://github.com/mikhailkollen/News-Homepage-Project)
+- [The live Site URL:](https://mikhailkollen.github.io/News-Homepage-Project/)
 
 ## My process
 
